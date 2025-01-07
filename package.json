@@ -1,0 +1,17 @@
+{
+  "name": "demo-next-node-apollo-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start:dev": "concurrently --kill-others \"pnpm:dev:*\"",
+    "dev:client": "pnpm --filter client dev",
+    "dev:server": "pnpm --filter server start",
+    "seed:server": "pnpm --filter server migrate:seed"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321"
+}

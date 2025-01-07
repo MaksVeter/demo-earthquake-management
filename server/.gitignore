@@ -1,0 +1,44 @@
+# Node modules
+node_modules/
+
+# TypeScript
+dist/
+*.tsbuildinfo
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# npm package-lock files
+package-lock.json
+npm-debug.log
+
+# pnpm store (if using pnpm)
+.pnpm-store/
+
+# Coverage directory used by testing tools
+coverage/
+
+# TypeScript compile cache
+tsconfig.tsbuildinfo
+
+# Next.js build folder (if using Next.js in the server side)
+.next/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Docker files
+docker-compose.override.yml
+
+# Temporary files created by VSCode or other editors
+*.swp
