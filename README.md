@@ -33,7 +33,7 @@ This project is a monorepo containing a client and a server that manages a list 
 
 ### 1. Clone the repository
 
-```bash
+```
 git clone https://github.com/MaksVeter/demo-earthquake-management.git
 cd demo-earthquake-management
 
@@ -43,7 +43,7 @@ cd demo-earthquake-management
 
 Use `pnpm` to install dependencies for both client and server:
 
-```bash
+```
 pnpm install
 
 ```
@@ -60,8 +60,6 @@ This will install the dependencies for both the `client` and `server` directorie
 
 3.  Obtain the connection string from MongoDB Atlas. It will look something like this:
 
-    bash
-
 
     `mongodb+srv://<username>:<password>@cluster0.mongodb.net/earthquake_db?retryWrites=true&w=majority`
 
@@ -71,21 +69,17 @@ This will install the dependencies for both the `client` and `server` directorie
 
 Create a `.env` file in the `server` folder with the following MongoDB Atlas configuration:
 
-bash
-
-
-`ATLAS_URI=mongodb+srv://<login>:<password>@cluster0.xxx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+```
+ATLAS_URI=mongodb+srv://<login>:<password>@cluster0.xxx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 DB_NAME=testdb
-COLLECTION=earthquakes`
+COLLECTION=earthquakes
+```
 
 Replace `<login>` and `<password>` with your MongoDB Atlas credentials.
 
 #### Client Environment Variables (`client/.env`)
 
 Create a `.env` file in the `client` folder with the following GraphQL server URL:
-
-bash
-
 
 `GRAPHQL_SERVER_URL=http://localhost:5050/graphql`
 
@@ -120,7 +114,7 @@ bash
 
 To run both the client and server in development mode concurrently:
 
-```bash
+```
 pnpm run start:dev
 
 ```
@@ -135,7 +129,7 @@ This will start:
 1.  **Create a `.env` file** in the `server` folder with your database configuration (e.g., for PostgreSQL, MongoDB, etc.).
 2.  Run the migration and seed script to initialize the database:
 
-```bash
+```
 pnpm run seed:server
 
 ```
@@ -152,9 +146,9 @@ This project is licensed under the MIT License - see the [LICENSE](https://chatg
 
 -   **Error: `pnpm not found`**: Ensure that you have **pnpm** installed globally. You can install it with:
 
-    ```bash
-    npm install -g pnpm
+```
+npm install -g pnpm
     
-    ```
+```
 
 -   **Error: `Database connection failed`**: Double-check your `.env` configuration and make sure your database is running.
